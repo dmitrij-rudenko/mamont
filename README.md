@@ -19,6 +19,6 @@ $ mamont
 
 ### Options
 
-`-p` - Make the web server accessible from the port you specified.
-`-t` -	Starting with a specific document root directory.
-`-h` -	Show help.
+`-p` - Make the web server accessible from the port you specified.  
+`-t` -	Starting with a specific document root directory.  
+`-h` -	Show help.  
