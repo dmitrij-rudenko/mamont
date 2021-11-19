@@ -2,7 +2,7 @@
 
 import http from 'http'
 import { serverInit } from '../src/main.js'
-import { args } from '../src/utils/index.js'
+import { args, shellHelp } from '../src/utils/index.js'
 
 const server = http.createServer(serverInit)
 
