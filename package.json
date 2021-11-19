@@ -1,6 +1,6 @@
 {
   "name": "mamont",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple development server for static websites",
   "main": "bin/index.js",
   "scripts": {
