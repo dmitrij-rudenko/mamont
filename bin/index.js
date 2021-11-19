@@ -8,29 +8,7 @@ const server = http.createServer(serverInit)
 
 const port = args.p || 0
 
-const helpMessage = `
-█▀▄▀█ ▄▀█ █▀▄▀█ █▀█ █▄░█ ▀█▀
-█░▀░█ █▀█ █░▀░█ █▄█ █░▀█ ░█░
-
-Simple development server on Node.js
-
-usage:
-	mamont
-
-options:
-	-p	Make the web server accessible from the port you specified
-	-t	Starting with a specific document root directory
-	-h	Show help
-
-example:
-	mamont -p 3000
-`
-
-if (args.h) {
-	console.log(helpMessage)
-
-	process.exit(0)
-}
+if (args.h) shellHelp()
 
 const onServerRun = () => {
 	console.log(`[${new Date().toLocaleString()}] Node.js Development Server (http://localhost:${server.address().port}) started`)

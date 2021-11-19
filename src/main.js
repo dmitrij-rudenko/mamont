@@ -4,7 +4,6 @@ import chalk from 'chalk'
 
 const dir =  args.t || process.cwd()
 
-
 export const serverInit = (request, response) => {
 	const { host } = request.headers
 	getMessage(`${request.url}`, host, response.statusCode)
