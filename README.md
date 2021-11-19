@@ -22,3 +22,9 @@ $ mamont
 `-p` - Make the web server accessible from the port you specified.  
 `-t` -	Starting with a specific document root directory.  
 `-h` -	Show help.  
+
+Example:
+
+```
+mamont -p 3000
+```
