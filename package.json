@@ -1,0 +1,22 @@
+{
+  "name": "mamont",
+  "version": "1.0.0",
+  "description": "Simple node.js server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "node",
+    "web",
+    "tool",
+    "cli",
+    "backend"
+  ],
+  "author": "dmitrij-rudenko",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
