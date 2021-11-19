@@ -1,6 +1,6 @@
 {
   "name": "mamont-npm-test",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Simple node.js server",
   "main": "bin/index.js",
   "scripts": {
@@ -15,7 +15,10 @@
     "cli",
     "backend"
   ],
-  "author": "dmitrij-rudenko",
+  "author": {
+    "name": "dmitrij-rudenko",
+    "url": "https://github.com/dmitrij-rudenko"
+  },
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.15"
