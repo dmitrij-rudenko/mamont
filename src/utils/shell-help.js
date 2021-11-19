@@ -3,7 +3,7 @@ export const shellHelp = () => {
   █▀▄▀█ ▄▀█ █▀▄▀█ █▀█ █▄░█ ▀█▀
   █░▀░█ █▀█ █░▀░█ █▄█ █░▀█ ░█░
 
-  Simple development server on Node.js
+  A simple development server for static websites
 
   usage:
     mamont

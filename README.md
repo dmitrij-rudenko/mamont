@@ -1,7 +1,7 @@
 
 ![alt text](assets/logo.png "Title")
 
-A simple development server on Node.js for static websites 🤘
+A simple development server for static websites 🤘
 
 ## Installation
 

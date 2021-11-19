@@ -1,7 +1,7 @@
 {
   "name": "mamont",
   "version": "1.0.8",
-  "description": "Simple node.js server",
+  "description": "A simple development server for static websites",
   "main": "bin/index.js",
   "scripts": {
     "dev": "nodemon  bin/index.js",
