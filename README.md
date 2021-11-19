@@ -11,10 +11,3 @@ npm install -g mamont
 ```sh
 mamont
 ```
-
-## Development Setup
-
-```sh
-npm install
-npm run dev
-```

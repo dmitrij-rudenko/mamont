@@ -1,6 +1,6 @@
 {
-  "name": "mamont-npm-test",
-  "version": "0.0.0-development",
+  "name": "mamont",
+  "version": "1.0.1",
   "description": "Simple node.js server",
   "main": "bin/index.js",
   "scripts": {
@@ -28,11 +28,11 @@
   },
   "type": "module",
   "dependencies": {
-    "portfinder": "^1.0.28",
     "yargs": "^17.2.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmitrij-rudenko/mamont.git"
-  }
+  },
+  "homepage": "https://github.com/dmitrij-rudenko/mamont"
 }
