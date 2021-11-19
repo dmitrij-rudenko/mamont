@@ -1,5 +1,5 @@
 {
-  "name": "mamont",
+  "name": "mamont-npm-test",
   "version": "1.0.0",
   "description": "Simple node.js server",
   "main": "bin/index.js",

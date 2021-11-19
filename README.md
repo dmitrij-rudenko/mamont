@@ -3,9 +3,15 @@
 ## Installation
 
 ```sh
-// sudo wget -O /usr/bin/mamont https://raw.githubusercontent.com/dmitrij-rudenko/mamont/main/index.js
-// sudo chmod +x /usr/bin/mamont
+npm install -g mamont
 ```
+
+## Usage
+
+```sh
+mamont
+```
+
 ## Development Setup
 
 ```sh
