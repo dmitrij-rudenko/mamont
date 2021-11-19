@@ -1,7 +1,7 @@
 {
   "name": "mamont",
   "version": "1.0.9",
-  "description": "A simple development server for static websites",
+  "description": "A simple сommand-line http server for static websites",
   "main": "bin/index.js",
   "scripts": {
     "dev": "nodemon  bin/index.js",
@@ -13,7 +13,11 @@
     "web",
     "tool",
     "cli",
-    "backend"
+    "backend",
+    "command",
+    "static",
+    "http",
+    "http-server"
   ],
   "author": {
     "name": "dmitrij-rudenko",
@@ -35,5 +39,6 @@
     "type": "git",
     "url": "git+https://github.com/dmitrij-rudenko/mamont.git"
   },
-  "homepage": "https://github.com/dmitrij-rudenko/mamont"
+  "homepage": "https://github.com/dmitrij-rudenko/mamont",
+  "preferGlobal": true
 }

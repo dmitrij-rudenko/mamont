@@ -2,7 +2,7 @@ import fs from 'fs'
 import { args, getMessage } from './utils/index.js'
 import chalk from 'chalk'
 
-const dir =  args.t || process.cwd()
+const dir =  args.d || process.cwd()
 
 export const serverInit = (request, response) => {
 	const { host } = request.headers
