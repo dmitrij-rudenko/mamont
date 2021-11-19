@@ -1,4 +1,4 @@
-# Run Simple Server on Node.js.
+# Run simple server on Node.js.
 
 ## Installation
 
