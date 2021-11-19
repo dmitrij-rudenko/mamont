@@ -1,5 +1,3 @@
-import { args } from './index.js'
-
 export const shellHelp = () => {
 	const helpMessage = `
   █▀▄▀█ ▄▀█ █▀▄▀█ █▀█ █▄░█ ▀█▀
