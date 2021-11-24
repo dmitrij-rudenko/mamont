@@ -4,7 +4,7 @@
   "description": "A simple сommand-line http server for static websites",
   "main": "bin/index.js",
   "scripts": {
-    "dev": "nodemon  bin/index.js",
+    "dev": "nodemon  bin/index.js -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
