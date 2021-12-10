@@ -43,7 +43,8 @@ export class ServerService {
 	}
 
 	static #onListen() {
-		LoggerService.initMessage()
+		this.serverPort = ServerService.server.address().port
+		LoggerService.initMessage(this.serverPort)
 	}
 
 	static init() {
@@ -52,4 +53,6 @@ export class ServerService {
 	}
 
   static server = http.createServer(this.#serverInit)
+	static serverPort = null
 }
+

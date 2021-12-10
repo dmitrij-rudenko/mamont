@@ -1,6 +1,5 @@
 import chalk from 'chalk'
 
-import { ShellService } from './ShellService.js'
 import { SUCCESS_COLOR, ERROR_COLOR } from '../constants/index.js'
 
 export class LoggerService {
@@ -9,12 +8,8 @@ export class LoggerService {
 	static #getColor = (statusCode) =>
 		statusCode === 200 ? SUCCESS_COLOR : ERROR_COLOR
 
-	static initMessage() {
-		console.log(
-			`[${this.#getDate()}] Node.js Development Server (http://localhost:${
-				ShellService.port
-			}) started`
-		)
+	static initMessage(port) {
+		console.log(`[${this.#getDate()}] Node.js Development Server (http://localhost:${ port }) started`)
 	}
 	static getMessage(text, host, statusCode) {
 		console.log(`[${this.#getDate()}] ${host} [${statusCode}] ${text}`)
