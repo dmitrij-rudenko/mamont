@@ -11,7 +11,7 @@ options:
   -p	Make the web server accessible from the port you specified
   -d	Starting with a specific document root directory
   -h	Show help
-  -c  Clone page by url(Create directory with page host name and download page like index.html)
+  -c  Clone page by url(Create a directory with page hostname and download page named index.html).
 
 example:
   mamont -p 3000 -c www.npmjs.com
