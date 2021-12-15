@@ -11,6 +11,7 @@ export class LoggerService {
 	static initMessage(port) {
 		console.log(`[${this.#getDate()}] Node.js Development Server (http://localhost:${ port }) started`)
 	}
+	
 	static getMessage(text, host, statusCode) {
 		console.log(`[${this.#getDate()}] ${host} [${statusCode}] ${text}`)
 	}

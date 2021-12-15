@@ -2,10 +2,10 @@
   "name": "mamont",
   "version": "2.0.0",
   "description": "A simple сommand-line http server for static websites",
-  "main": "bin/index.js",
+  "type": "module",
+  "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon  bin/index.js -p 3000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/server -p 3000 -d ../test"
   },
   "keywords": [
     "server",
@@ -28,11 +28,12 @@
     "nodemon": "^2.0.15"
   },
   "bin": {
-    "mamont": "./bin/index.js"
+    "mamont": "./src/server.js"
   },
-  "type": "module",
   "dependencies": {
+    "axios": "^0.24.0",
     "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.10",
     "yargs": "^17.2.1"
   },
   "repository": {
