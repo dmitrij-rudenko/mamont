@@ -14,7 +14,7 @@ options:
   -c  Clone page by url(Create directory with page host name and download page like index.html)
 
 example:
-  mamont -p 3000 -c github.com
+  mamont -p 3000 -c www.npmjs.com
 `
 
 export const SUCCESS_COLOR = 'green'

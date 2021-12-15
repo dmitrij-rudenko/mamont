@@ -33,5 +33,5 @@ $ npx mamont
 Example:
 
 ```
-$ mamont -p 3000 -c github.com
+$ mamont -p 3000 -c www.npmjs.com
 ```
