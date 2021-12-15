@@ -1,6 +1,6 @@
 {
   "name": "mamont",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A simple сommand-line http server for static websites",
   "type": "module",
   "main": "src/server.js",
