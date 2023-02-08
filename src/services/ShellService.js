@@ -45,9 +45,9 @@ export class ShellService {
 					return resultList
 				}
 
-				const scriptSourceList = getUrlsList('script', 'src')
-				const imagesSourceList = getUrlsList('img', 'src')
-				const linkHrefList = getUrlsList('link', 'href')
+				// const scriptSourceList = getUrlsList('script', 'src')
+				// const imagesSourceList = getUrlsList('img', 'src')
+				// const linkHrefList = getUrlsList('link', 'href')
 				
 				if (!fs.existsSync(host)) await fs.promises.mkdir(host)
 				fs.writeFile(host + '/index.html', $.html(), error => {

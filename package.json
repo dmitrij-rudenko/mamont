@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/server.js",
   "scripts": {
-    "test": "node src/server -p 3000 -d ../test"
+    "test": "node src/server -p 3000 -d ./test"
   },
   "keywords": [
     "server",
