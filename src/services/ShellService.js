@@ -16,47 +16,30 @@ export class ShellService {
 	}
 
 	static initHelp() {
-		this.argv.h && this.#logHelp()
+		if (this.argv.h) {
+			this.#logHelp()
+		}
 	}
 
 	static async initSiteClone() {
 		if (this.argv.c) {
-			const { origin, host, href } = getUrlData(this.argv.c)
-			const url = origin
+			const { origin, host } = getUrlData(this.argv.c)
 
 			try {
-				const { data } = await axios.get(url)
-				const $ = cheerio.load(data);
-				
-				const getUrlsList = (tag, attr) => {
-					const $tags = $(tag)
-					const resultList = []
-					$tags.each(function(index) {
-						let link = $(this).attr(attr)
-						
-						if (link && link.startsWith('/')) link = link.replace('/', href)
-						$(this).attr(attr, link)
+				const { data } = await axios.get(origin)
+				const $ = cheerio.load(data)
 
-						resultList.push({
-							attributes: JSON.parse(JSON.stringify($tags[index].attribs))
-						})
-					})
-
-					return resultList
+				if (!fs.existsSync(host)) {
+					await fs.promises.mkdir(host)
 				}
-
-				// const scriptSourceList = getUrlsList('script', 'src')
-				// const imagesSourceList = getUrlsList('img', 'src')
-				// const linkHrefList = getUrlsList('link', 'href')
-				
-				if (!fs.existsSync(host)) await fs.promises.mkdir(host)
-				fs.writeFile(host + '/index.html', $.html(), error => {
-					error && console.log(error)
+				fs.writeFile(host + '/index.html', $.html(), (error) => {
+					if (error) {
+						console.log(error)
+					}
 				})
 			} catch (err) {
 				console.log(err.message)
 			}
-
 		}
 	}
 }

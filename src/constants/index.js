@@ -17,5 +17,7 @@ example:
   mamont -p 3000 -c www.npmjs.com
 `
 
-export const SUCCESS_COLOR = 'green'
-export const ERROR_COLOR = 'yellow'
+export const colors = {
+  SUCCESS: 'green',
+  ERROR: 'yellow',
+}

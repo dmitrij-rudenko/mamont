@@ -9,16 +9,21 @@ let dir = argv.d || process.cwd()
 
 export class ServerService {
 	static #urlData = null
-	
+
 	static #redirectToIndexPage(request) {
 		this.#urlData = getUrlData(argv.c || request.url)
-	
+
 		const url = request.url.substr(1).split('?')[0]
-		url === '/' || url === '' && (request.url = '/index.html')
+		if (url === '/' || url === '') {
+			request.url = '/index.html'
+		}
 	}
 
 	static #initFileAccess = ({ host, url, response }) => {
-		if (argv.c) dir = this.#urlData.host
+		if (argv.c) {
+			dir = this.#urlData.host
+		}
+
 		const filePath = dir + '/' + url.substr(1).split('?')[0]
 
 		const onFileAccess = (err) => {
@@ -27,9 +32,15 @@ export class ServerService {
 
 			LoggerService.logger(response.statusCode, filePath, host)
 
-			if (err) response.end('Resourse not found!')
-			else fs.createReadStream(filePath).pipe(response)
+			if (err) {
+				response.end('Resourse not found!')
+
+				return
+			}
+
+			fs.createReadStream(filePath).pipe(response)
 		}
+
 		fs.access(filePath, fs.constants.R_OK, onFileAccess)
 	}
 
@@ -63,4 +74,3 @@ export class ServerService {
 	static server = http.createServer(this.#serverInit)
 	static serverPort = null
 }
-
